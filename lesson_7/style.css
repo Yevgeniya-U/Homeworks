@@ -333,6 +333,7 @@ outline: 2px solid #007bff;
 }
 
 .game span {
+    position: absolute;
     top: 5px;
     left: 20px;
     font-size: 40px;
