@@ -1,0 +1,393 @@
+main {
+    background-color: tan;
+}
+h1 {
+    font-family: "DM Sans", serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 30px;
+}
+.pseudo-classes h2 {
+    font-size: 40px;
+    letter-spacing: -1.26px;
+    color: black;
+    text-decoration: underline;
+    margin-bottom: 30px;
+
+}
+.pseudo-classes {
+    font-family: "DM Sans", serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: blue;
+    text-align: center;
+}
+.feature-card {
+    display: block;
+    margin-bottom: 30px;
+}
+.feature-card:hover {
+color: rgb(34, 18, 18);
+outline: 2px solid #007bff;
+}
+.clickable-element {
+    display: block;
+    margin-bottom: 30px;
+}
+.clickable-element:active {
+    color: rgb(34, 18, 18);
+    text-decoration: underline;
+}
+.link {
+    display: block;
+    color: aqua;
+    margin-bottom: 30px;
+}
+.some-block {
+    margin-bottom: 30px;
+}
+.link:visited {
+    color: darkblue;
+}
+.focusable-element {
+    display: block;
+    margin-bottom: 30px;
+}
+.focusable-element:focus {
+    outline: 3px solid darkblue;
+    background-color: tan;
+}
+.block {
+    margin: 0 auto;
+    display: none;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+.block:target {
+    display: block;
+}
+.text {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    color: #131313;
+    padding:  15px 25px;
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+}
+.text p {
+    margin-bottom: 15px;
+}
+.text p:first-child {
+    text-decoration: underline;
+    color: #007bff;
+}
+.text span:first-of-type {
+    color: green;
+}
+.text span {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.text p:last-child {
+    color: brown;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+.text span:last-of-type {
+    color: rgb(86, 23, 158);
+}
+.text p:nth-of-type(even) {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.text:not(.none) {
+    font-weight: 700;
+}
+.text:has(span) {
+    border: 2px solid red;
+    border-radius: 30px;
+}
+.parent p {
+    color: black;
+    text-align: left;
+    font-size: 20px;
+}
+.parent-text p {
+    margin-bottom: 12px;
+}
+.parent h3 {
+    color: black;
+    display: inline-block;
+}
+.parent h3::after {
+    content: "";
+    height: 2px;
+    width: 65%;
+    background-color: blue;
+    display: block;
+    /* margin: 0 auto; */
+}
+.parent_link {
+    display: inline-block;
+    color: black;
+    font-size: 25px;
+    padding: 15px;
+    background-color: rgb(20, 233, 155);
+}
+.parent_link:hover {
+    text-decoration: underline;
+    background-color: #0fc6b1;
+}
+.parent > * {
+    margin-bottom: 20px;
+}
+/* .parent-text:not(:last-child) {
+    margin-bottom: 20px;
+} */
+.parent > *:last-child {
+   margin-bottom: 0;
+}
+.new-block {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    text-align: left;
+    margin-top: 15px;
+}
+.new-block::before {
+    content: "This is how I add text before";
+    color: olive;
+}
+.new-block::after {
+    content: "This is how I add text after";
+    color: olive;
+}
+
+.agrolink {
+    font-family: "DM Sans", serif;
+    margin: 30px;
+    background-color: white;
+    padding-right: 14px;
+    display: inline-block;
+}
+.agrolink-title span {
+    font-size: 50px;
+    letter-spacing: -1.26px;
+    color: #131313;
+}
+.agrolink-title {
+    font-size: 50px;
+    letter-spacing: -1.26px;
+    font-weight: 700;
+    color: #1AAF5B;
+    margin-bottom: 20px;
+}
+.agrolink-title::before {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 48%;
+    background: linear-gradient(102deg,rgba(18, 255, 70, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    border-radius: 2px;
+    margin-bottom: 17px;
+}
+.agrolink p {
+    opacity: 60%;
+    max-width: 460px;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    line-height: 28px;
+    margin-bottom: 58px;
+}
+.agrolink-button {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.43px;
+    color: #FFFFFF;
+    background-color: #1AAF5B;
+    padding: 25px 40px 23px 40px;
+    border-radius: 0 15px 0 0;
+    margin-bottom: 20px;
+}
+.agrolink-button:hover {
+    text-decoration: underline;
+    background-color: #1dc22e;
+}
+.agrolink-button span::after {
+    content: "";
+    display: inline-block;
+    background-image: url('../img/keyboard-arrow-right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 9.6px;
+    margin-left: 18px;
+}
+.game-title {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.game-title:after {
+     content: "";
+    display: block;
+    height: 4px;
+    width: 15%;
+    background: rgb(37, 9, 9);
+    margin: 0 auto;
+
+}
+.game {
+    background-image: url('../img/autumn-8620917_640.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    margin: 0 30px;
+    position: relative;
+}
+.game .path {
+    position: absolute;
+    background-color: #572610;
+    border: 2px solid #ccc;
+    opacity: 0;
+}
+.game .path:hover {
+    opacity: 0.7;
+}
+.game .path:first-child {
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 200px;
+    opacity: 0.7;
+}
+ .game .path:nth-child(1):hover + .path:nth-child(2) {
+    opacity: 0.7;
+ }
+.game .path:nth-child(2) {
+    top: 200px;
+    left: 0;
+    width: 550px;
+    height: 80px;
+}
+.game .path:nth-child(2):hover + .path:nth-child(3) {
+    opacity: 0.7;
+
+}
+.game .path:nth-child(3) {
+    top: 200px;
+    left: 550px;
+    width: 80px;
+    height: 300px;
+}
+.game .path:nth-child(3):hover + .path:nth-child(4) {
+    opacity: 0.7;
+}
+.game .path:nth-child(4) {
+    top: 500px;
+    left: 550px;
+    width: 400px;
+    height: 80px;
+}
+.game .path:nth-child(4):hover + .path:nth-child(5) {
+    opacity: 0.7;
+}
+
+.game .path:nth-child(5) {
+    top: 80px;
+    left: 950px;
+    width: 80px;
+    height: 500px;
+}
+.game .path:nth-child(5):hover + .path:nth-child(6) {
+    opacity: 0.7;
+}
+
+.game .path:nth-child(6) {
+    top: 0;
+    left: 950px;
+    width: 400px;
+    height: 80px;
+}
+.game .path:nth-child(6):hover + .path:nth-child(7) {
+    opacity: 0.7;
+}
+
+.game .path:nth-child(7) {
+    top: 0;
+    left: 1350px;
+    width: 80px;
+    height: 700px;
+}
+.game .path:nth-child(7):hover {
+    opacity: 0.7;
+}
+
+.game span {
+    top: 5px;
+    left 20px;
+    font-size: 40px;
+   font-weight: 500;
+   color: yellow;
+}
+.game .path:nth-child(7) {
+    position: absolute;
+    
+}
+.game .path:nth-child(7)::after {
+    content: "Finish";
+    position: absolute;
+    bottom: 10px;       
+    left: 0;
+    right: 0;
+    text-align: center; 
+    font-size: 30px;
+    color: yellow;
+    font-weight: 500;
+}
+.game .path:nth-child(1) {
+    position: absolute;
+    
+}
+
+.game .path:nth-child(1)::before {
+    content: "Start";
+    position: absolute;
+    top: 10px;       
+    left: 0;
+    right: 0;
+    text-align: center; 
+    font-size: 30px;
+    color: yellow;
+    font-weight: 500;
+}
+header,
+footer {
+    background: linear-gradient(20deg,rgba(255, 219, 18, 1) 0%, rgba(222, 132, 42, 1) 100%);
+    line-height: 1.4;
+    padding: 20px;
+    text-align: center;
+}
+header span,
+footer span {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0 15px;
+    color: white;
+}
+header span a:hover {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+footer span:hover {
+    font-size: 45px;
+}
