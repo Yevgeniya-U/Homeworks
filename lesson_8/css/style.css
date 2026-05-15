@@ -1,0 +1,47 @@
+main {
+   background-color: rgb(245, 245, 239);
+   font-family: Poppins, serif;
+}
+header {
+    background-color: rgb(245, 245, 239);
+    font-size: 55px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.page-container span {
+   font-size: 30px;
+}
+.page-container span::before {
+   background: url('../img/Meubel\ House_Logos-05.png');
+   content: "";
+}
+.logo-container {
+   margin-bottom: 25px;
+}
+.icon-container {
+   margin-bottom: 25px;
+}
+p {
+   font-size: 28px;
+   text-align: center;
+   font-weight: 600;
+   margin-bottom: 25px;
+}
+.picture_image {
+   display: block;
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: 25px;
+}
+.footer {
+   display: block;
+   font-size: 20px;
+   text-align: center;
+}
+.footer:hover {
+   color: darkblue;
+   text-decoration: underline;
+
+}
+
